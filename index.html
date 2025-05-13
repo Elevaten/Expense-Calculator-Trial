@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>To Do</title>
+</head>
+<body>
+
+    <div class="everything">
+        <div class="title"> <h1 class="daily">Daily Exp</h1><i class="fa-solid fa-coins"></i></div>
+    <div class="container">
+        <input class="inputfield" id="inputField" type="text" placeholder=" Expense Title">
+        <input class="inputfield" id="inputField2" type="text" oninput="validateInput(this)" placeholder=" For How much">
+        
+        <button class="add" id="addToDo">+</button>
+        <button class="add" onclick="calculateSum()">Total</button>
+        <button class="reset"onclick="reset()"><i class="fa-solid fa-rotate-right"></i></button>
+  <p id="result"></p>
+        <div class="to-dos" id="toDoContainer">
+            <div class="trash"id="trash">
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="foot"> </div>
+    <script src="script.js"></script>
+</body>
+</html>
